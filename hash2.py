@@ -14,12 +14,14 @@ class Person:
         return self.__name==obj2.__name and self.__age==obj2.__age
            
     
-    
+#Sets to contain their content ,use from Hash of a  contenct
+#Objects dont have hash , unlikely numbers, strings and decimals
+#the Below hash function can  return the and Objects hash as well    
     def __hash__(self) -> int:
         return hash(self.__name)+hash(self.__age)
     
     def __str__(self):
-        return f"{self.__name}\t{self.__age}"
+        return f"Name is  :{self.__name}\t Age is :{self.__age}"
     
     
     
