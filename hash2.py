@@ -11,7 +11,7 @@ class Person:
     def __eq__(self, obj2):
         if not isinstance(obj2,Person):
             return False
-        return self.__name==obj2.__name and self.__age==obj2.__age
+        return self.__name==obj2.__name and self.__age==obj2.__age #Brings True oR False:
            
     
 #Sets to contain their content ,use from Hash of a  contenct
@@ -33,4 +33,8 @@ p4=Person("Jack",15)
 
 set1={p1,p2,p3,p4}
 for person in set1:
+    print(person)
+
+list1=[p1,p2,p3,p4]
+for person in list1:
     print(person)
